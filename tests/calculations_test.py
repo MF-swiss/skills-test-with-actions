@@ -46,16 +46,16 @@ def test_get_nth_fibonacci_zero():
     assert result == 0
 
 
-def get_nth_fibonacci(n):
-    if n <= 0:
-        return 0
-    if n == 1:
-        return 1
+def test_get_nth_fibonacci_ten():
+    """Test with n=10."""
+    # Arrange
+    n = 10
 
-    a, b = 0, 1
-    for _ in range(n):
-        a, b = b, a + b
-    return a
+    # Act
+    result = get_nth_fibonacci(n)
+
+    # Assert
+    assert result == 89
 
 
 # def test_get_nth_fibonacci_ten():
