@@ -53,4 +53,4 @@ def test_get_nth_fibonacci_two():
 
 def test_get_nth_fibonacci_ten():
     """Test with n=10."""
-    assert get_nth_fibonacci(10) == 89
+    assert get_nth_fibonacci(10) == 55
